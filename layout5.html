@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout 5</title>
+  </head>
+  <body>
+    <style>
+      .header,
+      .section,
+      .article,
+      .nav,
+      .menu,
+      .footer {
+        border: 1px solid black;
+        background: rgb(66, 130, 75);
+      }
+      .content{
+        display: flex;
+      }
+    .nav{
+        width: auto;
+        min-height: 25px;
+        padding: 5px;
+      }
+      .section{
+        width: 100%;
+        min-height: 60vh;
+        padding: 10px;
+
+      }
+      .article{
+        background-color: bisque;
+        height:90%;
+        padding: 5px;
+    }
+    .header,
+    .footer{
+        height: 50px;
+    }
+    </style>
+    <header class="header">Header</header>
+    <div class="nav">Nav</div>
+    <div class="content">
+      <div class="section">Section
+        <div class="article"> article</div>
+      </div>
+    </div>
+    <footer class="footer">Footer</footer>
+  </body>
+</html>
+

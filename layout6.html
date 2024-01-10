@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout 6</title>
+  </head>
+  <body>
+    <style>
+      .header,
+      .section,
+      .article,
+      .Article,
+      .nav,
+      .menu,
+      .footer,
+      .aside {
+        border: 1px solid black;
+        background: rgb(141, 170, 82);
+      }
+      .content{
+        display: flex;
+      }
+    .nav{
+        width: auto;
+        height: 25px;
+        padding: 5px;
+      }
+      .section{
+        width: 60%;
+        min-height: 60vh;
+        padding: 5px;
+        float: left;
+      }
+    .article{
+        background-color: rgb(185, 110, 18);
+        height:45%;
+        padding: 5px;
+        display: flex;
+    }
+    .Article{
+        background-color: rgb(127, 172, 28);
+        height:45%;
+        padding: 5px;
+    }
+    .aside{
+        float: left;
+        width:40%;
+        padding:5px;
+    }
+    .header,
+    .footer{
+        height: 50px;
+    }
+    </style>
+    <header class="header">Header</header>
+    <div class="nav">Nav</div>
+    <div class="content">
+      <div class="section">Section
+        <div class="article"> article</div>
+        <div class="Article"> Article</div>
+      </div>
+      <div class="aside"> aside</div>
+    </div>
+    <footer class="footer">Footer</footer>
+  </body>
+</html>
+
